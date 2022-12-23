@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		328AD59129555DD1008A2516 /* MeditationData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 328AD58E29555C17008A2516 /* MeditationData.xcdatamodeld */; };
+		328AD5D2295587F5008A2516 /* TopicEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AD5CC295587F5008A2516 /* TopicEntity+CoreDataClass.swift */; };
+		328AD5D3295587F5008A2516 /* TopicEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AD5CD295587F5008A2516 /* TopicEntity+CoreDataProperties.swift */; };
+		328AD5D4295587F5008A2516 /* MeditationEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AD5CE295587F5008A2516 /* MeditationEntity+CoreDataClass.swift */; };
+		328AD5D5295587F5008A2516 /* MeditationEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AD5CF295587F5008A2516 /* MeditationEntity+CoreDataProperties.swift */; };
+		328AD5D82955ABA5008A2516 /* SubtopicEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AD5D62955ABA5008A2516 /* SubtopicEntity+CoreDataClass.swift */; };
+		328AD5D92955ABA5008A2516 /* SubtopicEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AD5D72955ABA5008A2516 /* SubtopicEntity+CoreDataProperties.swift */; };
 		32AF57CB295386D900642A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57CA295386D900642A93 /* AppDelegate.swift */; };
 		32AF57CD295386D900642A93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57CC295386D900642A93 /* SceneDelegate.swift */; };
-		32AF57CF295386D900642A93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57CE295386D900642A93 /* ViewController.swift */; };
+		32AF57CF295386D900642A93 /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57CE295386D900642A93 /* TopicsViewController.swift */; };
 		32AF57D2295386D900642A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AF57D0295386D900642A93 /* Main.storyboard */; };
 		32AF57D4295386DA00642A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AF57D3295386DA00642A93 /* Assets.xcassets */; };
 		32AF57D7295386DA00642A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AF57D5295386DA00642A93 /* LaunchScreen.storyboard */; };
-		32AF57E2295386DB00642A93 /* TPHAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57E1295386DB00642A93 /* TPHAssignmentTests.swift */; };
-		32AF57EC295386DB00642A93 /* TPHAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57EB295386DB00642A93 /* TPHAssignmentUITests.swift */; };
-		32AF57EE295386DB00642A93 /* TPHAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57ED295386DB00642A93 /* TPHAssignmentUITestsLaunchTests.swift */; };
+		32AF57FD2953899700642A93 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57FC2953899700642A93 /* APIClient.swift */; };
+		32AF57FF2953A3D500642A93 /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF57FE2953A3D500642A93 /* TopicTableViewCell.swift */; };
+		32AF58012953A6C000642A93 /* UIColor+HexCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF58002953A6C000642A93 /* UIColor+HexCode.swift */; };
+		32AF58032953C15F00642A93 /* SubtopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF58022953C15F00642A93 /* SubtopicsViewController.swift */; };
+		32AF58052953C79300642A93 /* MeditationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF58042953C79300642A93 /* MeditationTableViewCell.swift */; };
+		32AF58082953CD1200642A93 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 32AF58072953CD1200642A93 /* SDWebImage */; };
+		32AF58112954408300642A93 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF58102954408300642A93 /* Topics.swift */; };
+		32AF5813295440C700642A93 /* Subtopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF5812295440C700642A93 /* Subtopics.swift */; };
+		32AF5815295440F500642A93 /* Meditations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF5814295440F500642A93 /* Meditations.swift */; };
+		32F98A182954E52D00E2BEF8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F98A172954E52D00E2BEF8 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +50,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		328AD58F29555C17008A2516 /* MeditationData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeditationData.xcdatamodel; sourceTree = "<group>"; };
+		328AD5CC295587F5008A2516 /* TopicEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopicEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		328AD5CD295587F5008A2516 /* TopicEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopicEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		328AD5CE295587F5008A2516 /* MeditationEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditationEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		328AD5CF295587F5008A2516 /* MeditationEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditationEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		328AD5D62955ABA5008A2516 /* SubtopicEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubtopicEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		328AD5D72955ABA5008A2516 /* SubtopicEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubtopicEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		32AF57C7295386D900642A93 /* TPHAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPHAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AF57CA295386D900642A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32AF57CC295386D900642A93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32AF57CE295386D900642A93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32AF57CE295386D900642A93 /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 		32AF57D1295386D900642A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32AF57D3295386DA00642A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32AF57D6295386DA00642A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32AF57D8295386DA00642A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32AF57DD295386DB00642A93 /* TPHAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPHAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32AF57E1295386DB00642A93 /* TPHAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPHAssignmentTests.swift; sourceTree = "<group>"; };
 		32AF57E7295386DB00642A93 /* TPHAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPHAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32AF57EB295386DB00642A93 /* TPHAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPHAssignmentUITests.swift; sourceTree = "<group>"; };
-		32AF57ED295386DB00642A93 /* TPHAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPHAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32AF57FC2953899700642A93 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		32AF57FE2953A3D500642A93 /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
+		32AF58002953A6C000642A93 /* UIColor+HexCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexCode.swift"; sourceTree = "<group>"; };
+		32AF58022953C15F00642A93 /* SubtopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicsViewController.swift; sourceTree = "<group>"; };
+		32AF58042953C79300642A93 /* MeditationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationTableViewCell.swift; sourceTree = "<group>"; };
+		32AF58102954408300642A93 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
+		32AF5812295440C700642A93 /* Subtopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtopics.swift; sourceTree = "<group>"; };
+		32AF5814295440F500642A93 /* Meditations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditations.swift; sourceTree = "<group>"; };
+		32F989CB2954DB3000E2BEF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		32F98A172954E52D00E2BEF8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AF58082953CD1200642A93 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +105,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		328AD5DA295633AA008A2516 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				328AD58E29555C17008A2516 /* MeditationData.xcdatamodeld */,
+				32F98A172954E52D00E2BEF8 /* DataManager.swift */,
+				328AD5D62955ABA5008A2516 /* SubtopicEntity+CoreDataClass.swift */,
+				328AD5D72955ABA5008A2516 /* SubtopicEntity+CoreDataProperties.swift */,
+				328AD5CC295587F5008A2516 /* TopicEntity+CoreDataClass.swift */,
+				328AD5CD295587F5008A2516 /* TopicEntity+CoreDataProperties.swift */,
+				328AD5CE295587F5008A2516 /* MeditationEntity+CoreDataClass.swift */,
+				328AD5CF295587F5008A2516 /* MeditationEntity+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		32AF57BE295386D900642A93 = {
 			isa = PBXGroup;
 			children = (
 				32AF57C9295386D900642A93 /* TPHAssignment */,
-				32AF57E0295386DB00642A93 /* TPHAssignmentTests */,
-				32AF57EA295386DB00642A93 /* TPHAssignmentUITests */,
 				32AF57C8295386D900642A93 /* Products */,
+				32F989CA2954DB3000E2BEF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +144,12 @@
 			children = (
 				32AF57CA295386D900642A93 /* AppDelegate.swift */,
 				32AF57CC295386D900642A93 /* SceneDelegate.swift */,
-				32AF57CE295386D900642A93 /* ViewController.swift */,
+				328AD5DA295633AA008A2516 /* CoreData */,
+				32AF580D2953EA4600642A93 /* Networking */,
+				32AF580A2953EA1E00642A93 /* Extensions */,
+				32AF580B2953EA2C00642A93 /* Models */,
+				32AF58092953EA1100642A93 /* ViewControllers */,
+				32AF580C2953EA3900642A93 /* Views */,
 				32AF57D0295386D900642A93 /* Main.storyboard */,
 				32AF57D3295386DA00642A93 /* Assets.xcassets */,
 				32AF57D5295386DA00642A93 /* LaunchScreen.storyboard */,
@@ -110,21 +158,56 @@
 			path = TPHAssignment;
 			sourceTree = "<group>";
 		};
-		32AF57E0295386DB00642A93 /* TPHAssignmentTests */ = {
+		32AF58092953EA1100642A93 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				32AF57E1295386DB00642A93 /* TPHAssignmentTests.swift */,
+				32AF57CE295386D900642A93 /* TopicsViewController.swift */,
+				32AF58022953C15F00642A93 /* SubtopicsViewController.swift */,
 			);
-			path = TPHAssignmentTests;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		32AF57EA295386DB00642A93 /* TPHAssignmentUITests */ = {
+		32AF580A2953EA1E00642A93 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				32AF57EB295386DB00642A93 /* TPHAssignmentUITests.swift */,
-				32AF57ED295386DB00642A93 /* TPHAssignmentUITestsLaunchTests.swift */,
+				32AF58002953A6C000642A93 /* UIColor+HexCode.swift */,
 			);
-			path = TPHAssignmentUITests;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32AF580B2953EA2C00642A93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32AF58102954408300642A93 /* Topics.swift */,
+				32AF5812295440C700642A93 /* Subtopics.swift */,
+				32AF5814295440F500642A93 /* Meditations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32AF580C2953EA3900642A93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32AF57FE2953A3D500642A93 /* TopicTableViewCell.swift */,
+				32AF58042953C79300642A93 /* MeditationTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32AF580D2953EA4600642A93 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				32AF57FC2953899700642A93 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		32F989CA2954DB3000E2BEF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32F989CB2954DB3000E2BEF8 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +226,9 @@
 			dependencies = (
 			);
 			name = TPHAssignment;
+			packageProductDependencies = (
+				32AF58072953CD1200642A93 /* SDWebImage */,
+			);
 			productName = TPHAssignment;
 			productReference = 32AF57C7295386D900642A93 /* TPHAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +301,9 @@
 				Base,
 			);
 			mainGroup = 32AF57BE295386D900642A93;
+			packageReferences = (
+				32AF58062953CD1200642A93 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 32AF57C8295386D900642A93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +347,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AF57CF295386D900642A93 /* ViewController.swift in Sources */,
+				328AD5D5295587F5008A2516 /* MeditationEntity+CoreDataProperties.swift in Sources */,
+				328AD59129555DD1008A2516 /* MeditationData.xcdatamodeld in Sources */,
+				32AF57CF295386D900642A93 /* TopicsViewController.swift in Sources */,
+				32F98A182954E52D00E2BEF8 /* DataManager.swift in Sources */,
+				32AF5815295440F500642A93 /* Meditations.swift in Sources */,
+				32AF57FF2953A3D500642A93 /* TopicTableViewCell.swift in Sources */,
+				32AF58032953C15F00642A93 /* SubtopicsViewController.swift in Sources */,
+				32AF58012953A6C000642A93 /* UIColor+HexCode.swift in Sources */,
+				328AD5D2295587F5008A2516 /* TopicEntity+CoreDataClass.swift in Sources */,
+				32AF58112954408300642A93 /* Topics.swift in Sources */,
+				32AF5813295440C700642A93 /* Subtopics.swift in Sources */,
 				32AF57CB295386D900642A93 /* AppDelegate.swift in Sources */,
+				328AD5D92955ABA5008A2516 /* SubtopicEntity+CoreDataProperties.swift in Sources */,
+				32AF58052953C79300642A93 /* MeditationTableViewCell.swift in Sources */,
+				32AF57FD2953899700642A93 /* APIClient.swift in Sources */,
+				328AD5D3295587F5008A2516 /* TopicEntity+CoreDataProperties.swift in Sources */,
+				328AD5D4295587F5008A2516 /* MeditationEntity+CoreDataClass.swift in Sources */,
 				32AF57CD295386D900642A93 /* SceneDelegate.swift in Sources */,
+				328AD5D82955ABA5008A2516 /* SubtopicEntity+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AF57E2295386DB00642A93 /* TPHAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AF57EE295386DB00642A93 /* TPHAssignmentUITestsLaunchTests.swift in Sources */,
-				32AF57EC295386DB00642A93 /* TPHAssignmentUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +704,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32AF58062953CD1200642A93 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32AF58072953CD1200642A93 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32AF58062953CD1200642A93 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		328AD58E29555C17008A2516 /* MeditationData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				328AD58F29555C17008A2516 /* MeditationData.xcdatamodel */,
+			);
+			currentVersion = 328AD58F29555C17008A2516 /* MeditationData.xcdatamodel */;
+			path = MeditationData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 32AF57BF295386D900642A93 /* Project object */;
 }

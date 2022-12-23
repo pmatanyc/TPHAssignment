@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G320" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MeditationEntity" representedClassName=".MeditationEntity" syncable="YES">
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="playCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="teacherName" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <relationship name="subtopic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SubtopicEntity" inverseName="meditations" inverseEntity="SubtopicEntity"/>
+        <relationship name="topic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TopicEntity" inverseName="meditations" inverseEntity="TopicEntity"/>
+    </entity>
+    <entity name="SubtopicEntity" representedClassName=".SubtopicEntity" syncable="YES">
+        <attribute name="parentUuid" optional="YES" attributeType="String"/>
+        <attribute name="position" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <relationship name="meditations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MeditationEntity" inverseName="subtopic" inverseEntity="MeditationEntity"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TopicEntity" inverseName="subtopics" inverseEntity="TopicEntity"/>
+    </entity>
+    <entity name="TopicEntity" representedClassName=".TopicEntity" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="featured" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <relationship name="meditations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MeditationEntity" inverseName="topic" inverseEntity="MeditationEntity"/>
+        <relationship name="subtopics" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubtopicEntity" inverseName="parent" inverseEntity="SubtopicEntity"/>
+    </entity>
+</model>
